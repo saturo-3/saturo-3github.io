@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tab Styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #ff7f50;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #ff7f50;
+    color: #fff;
+}
+
+/* Tab Content Styles */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Recipe Section Styles */
+.recipe-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.recipe-section h2 {
+    color: #ff7f50;
+}
+
+.recipe-section p {
+    margin-bottom: 10px;
+}
+
+.recipe-section ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.recipe-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Media Section Styles */
+.media-section {
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalise.css">
+    <link rel="stylesheet" type="text/css" href="css/nothing.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Página de Recetas</title>
+   
+
+
+</head>
+<body> 
+
+<i class="material-icons">cloud</i>
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+<i class="material-icons">traffic</i>
+
+
+
+
+    <header>
+        <h1>Recetas Deliciosas</h1>
+        <p class="made-by">Made by Youssef</p>
+    </header>
+
+    <div class="tabs">
+        <div class="tab" onclick="mostrarContenido('recetaPizza')">Receta de Pizza</div>
+        <div class="tab" onclick="mostrarContenido('recetaLasaña')">Lasaña</div>
+    </div>
+
+    <section id="recetaPizza" class="tab-content">
+        <h2>Receta de Pizza</h2>
+        <p>Ingredientes:</p>
+        <ul>
+            <li>Masa para pizza</li>
+            <li>Salsa de tomate</li>
+            <li>Queso mozzarella</li>
+            <li>Pepperoni</li>
+            <li>Pimientos</li>
+            <li>Aceitunas</li>
+           
+        </ul>
+
+        <div class="media-section">
+            <h3>Agregar Multimedia</h3>
+            <img src="images/pizza.jpeg" alt="">
+            
+            <label for="videoPizza"></label>
+            <video controls width="250">
+                <source src="video/pizza.mp4" type="video/mp4">
+            </video>
+
+            <label for="audioPizza"></label>
+            <audio controls loop autoplay>
+                <source src="audio/cooking.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </section>
+
+    <section id="recetaLasaña" class="tab-content">
+        <h2>Lasaña</h2>
+        <p>Ingredientes:</p>
+        <ul>
+            <li>Láminas de lasaña</li>
+            <li>Salsa boloñesa</li>
+            <li>Queso ricotta</li>
+            <li>Queso parmesano</li>
+            <li>Espinacas</li>
+            <li>Salsa bechamel</li>
+            
+        </ul>
+
+        <div class="media-section">
+            <h3>Agregar Multimedia</h3>
+            <label for="imagenLasaña"></label>
+            <img src="images/lasagna.jpeg" alt="">
+            
+            <label for="videoLasaña"></label>
+           <<video controls width="200">
+               <source src="video/lasagna.mp4" type="video/mp4">
+           </video>
+        </div>
+    </section>
+
+    <script>
+        function mostrarContenido(ventana) {
+            var ventanas = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < ventanas.length; i++) {
+                ventanas[i].style.display = 'none';
+            }
+
+            document.getElementById(ventana).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
